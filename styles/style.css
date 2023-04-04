@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+/* need to add font-family, height, margine*/
+/* create a flex container with items in a column and center the content vertically and*/
+height: 100vh;
+background: lightblue; /*want to make this a space backgroun tho*/
+}
+
+Header {
+/*add styling for header like font, size colors*/
+}
+
+h1{
+/*styling for heading -size, colors etc*/
+}
+
+#cards {
+    width: 10vmin;
+    margin: auto;
+    /*need a grid container*/
+    /*need 5 columns*/
+    /*repeat/loop function here?*/
+    /*need a gap between the cards*/
+    /*need a margin/space between buttons and header*/
+    /**/
+}
+
+#cards > div {
+    /*height of the card*/
+    /*styling of the cards, thick border?*/
+    /*movement shake when incorrect*/
+    /**/
+    /**/
+}
+
+#board {
+    /*create a grid container*/
+    /*5 columns*/
+    /*6 row grid template*/
+    /*small gap betweenrow and columns*/
+    /**/
+}
+
+button {
+    /*padding, font size, color*/
+    /*border, border radius*/
+    /**/
+}
+
+button:hover {
+/*change font color when hovering */ 
+/*change background color when hovering*/  
+}
