@@ -19,6 +19,10 @@ h1{
 /*styling for heading -size, colors etc*/
 }
 
+img{
+    width:100px;
+}
+
 #cards {
     width: 10vmin;
     margin: auto;
