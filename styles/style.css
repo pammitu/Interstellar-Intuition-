@@ -1,62 +1,58 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
 body {
-/* need to add font-family, height, margine*/
-/* create a flex container with items in a column and center the content vertically and*/
-height: 100vh;
-background: lightblue; /*want to make this a space backgroun tho*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-Header {
-/*add styling for header like font, size colors*/
+.space-objects {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 70%;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 
-h1{
-/*styling for heading -size, colors etc*/
+.space-object {
+    background-color: #444;
+    padding: 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 1vmin;
+    padding-bottom: 100%;
+}
+.space-object img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-img{
-    width:100px;
+img.open-face {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
-
-#cards {
-    width: 10vmin;
-    margin: auto;
-    /*need a grid container*/
-    /*need 5 columns*/
-    /*repeat/loop function here?*/
-    /*need a gap between the cards*/
-    /*need a margin/space between buttons and header*/
-    /**/
-}
-
-#cards > div {
-    /*height of the card*/
-    /*styling of the cards, thick border?*/
-    /*movement shake when incorrect*/
-    /**/
-    /**/
-}
-
-#board {
-    /*create a grid container*/
-    /*5 columns*/
-    /*6 row grid template*/
-    /*small gap betweenrow and columns*/
-    /**/
-}
-
-button {
-    /*padding, font size, color*/
-    /*border, border radius*/
-    /**/
-}
-
-button:hover {
-/*change font color when hovering */ 
-/*change background color when hovering*/  
+img.hidden-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
 }

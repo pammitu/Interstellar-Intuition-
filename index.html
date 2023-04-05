@@ -11,72 +11,117 @@
 <body>
 
 <!-- Header -->
-<header>
+<h1>
     INTERSTELLAR INTUITION
-</header>
+</h1>
 
 <!--Game Board -->
     <section class="space-objects"> <!--need two of the same for each pair-->
         <div class="space-object">
-        <img class="hidden-side" src="img/UFO.jpg" alt="UFO"/>
-        <img class="open-face" src="" alt="idk yet"/>
+            <img class="hidden-side" src="img/UFO.jpg" alt="UFO"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
-        <img class="hidden-side" src="img/UFO.jpg" alt="UFO"/>
-        <img class="open-face" src="" alt="idk yet"/>
+            <img class="hidden-side" src="img/UFO.jpg" alt="UFO"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
-        <img class="hidden-side" src="img/telescope.jpg" alt="Space Telescope"/>
-        <img class="open-face" src="" alt="idk yet"/>
+            <img class="hidden-side" src="img/telescope.jpg" alt="Space Telescope"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
-        <img class="hidden-side" src="img/telescope.jpg" alt="Space Telescope"/>
-        <img class="open-face" src="" alt="idk yet"/>
-        </div>
-        <div class="space-object">
-            <img class="hidden-side" src="img/saturn.jpg" alt="Planet Saturn"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="hidden-side" src="img/telescope.jpg" alt="Space Telescope"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
             <img class="hidden-side" src="img/saturn.jpg" alt="Planet Saturn"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/saturn.jpg" alt="Planet Saturn"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
             <img class="hidden-side" src="img/pillars of creation.jpg" alt="Pillars of Creation"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
             <img class="hidden-side" src="img/pillars of creation.jpg" alt="Pillars of Creation"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
             <img class="hidden-side" src="img/neptune.jpg" alt="Planet Neptune"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
         <div class="space-object">
             <img class="hidden-side" src="img/neptune.jpg" alt="Planet Neptune"/>
-            <img class="open-face" src="" alt="idk yet"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
         </div>
-    </section>
+        <div class="space-object">
+            <img class="hidden-side" src="img/mystic-mountain.jpg" alt="Mystic Mountain Nebula"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/mystic-mountain.jpg" alt="Mystic Mountain Nebula"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/jupiter.jpg" alt="Planet Jupiter"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/jupiter.jpg" alt="Planet Jupiter"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/blackhole.jpg" alt="Blackhole"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/blackhole.jpg" alt="Blackhole"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/astronaut.jpg" alt="astronaut"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/astronaut.jpg" alt="astronaut"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/astroid.jpg" alt="astroid"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
+        <div class="space-object">
+            <img class="hidden-side" src="img/astroid.jpg" alt="astroid"/>
+            <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
 </section>
 
+<!--Game Stats-->
 
-<!-- Total Score Tracker-->
-<h3>Score</h3>
-<!-- Total Pairs Tracker-->
-<h3>Total Pairs</h3>
+<section class="game-stats">
+<div id="score-container">
+    <h3>Score: <span id="score">0</span></h3>
+</div>
+<div id="pairs-containter">
+    <h3>Total Pairs: <span id="pairs">0</span></h3>
+</div>
+<div id="fouls-container">
+    <h3>Fouls:<span id="fouls">0</span></h3>
 
-<!-- Bad Guess Tracker-->
-<h3>Fouls</h3>
+</div>
+<div id="timer-container">
+    <h2>Timer: <span id="timer">00:00</span></h2>
 
-<!-- Time watch -->
-<h4>Timer</h4>
+</div>
+</section>
 
-<!-- Start -->
-<h3>Start</h3>
-
-<!-- Stop -->
-<h3>Stop</h3> 
+<!--game controls-->
+<section class="game-controls">
+    <button id="start-button">START</button>
+    <button id="stop-button">STOP</button>
+</section>
 
 </body>
 </html>
