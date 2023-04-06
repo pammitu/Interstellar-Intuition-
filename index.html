@@ -99,23 +99,25 @@
 </section>
 
 <!--Game Stats-->
+<div class="stats-container">
+    <div class="stats-left">
+    <div id="score-container">
+        <h3>Score: <span id="score">0</span></h3>
+    </div>
+    <div id="pairs-container">
+        <h3>Total Pairs: <span id="pairs">0</span></h3>
+    </div>
+</div>
 
-<section class="game-stats">
-<div id="score-container">
-    <h3>Score: <span id="score">0</span></h3>
+<div class="stats-right"> 
+    <div id="fouls-container">
+        <h3>Fouls:<span id="fouls">0</span></h3>
+    </div>
+    <div id="timer-container">
+        <h3>Timer: <span id="timer">00:00</span></h3>
+    </div>
 </div>
-<div id="pairs-containter">
-    <h3>Total Pairs: <span id="pairs">0</span></h3>
 </div>
-<div id="fouls-container">
-    <h3>Fouls:<span id="fouls">0</span></h3>
-
-</div>
-<div id="timer-container">
-    <h2>Timer: <span id="timer">00:00</span></h2>
-
-</div>
-</section>
 
 <!--game controls-->
 <section class="game-controls">
@@ -123,5 +125,6 @@
     <button id="stop-button">STOP</button>
 </section>
 
+<div id="message" class="message"></div>
 </body>
 </html>

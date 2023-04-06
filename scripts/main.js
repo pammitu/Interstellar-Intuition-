@@ -26,21 +26,22 @@ function startGame() {
         spaceObject.addEventListener("click", flipCard);
     });
 }
+let isFlipping = false; 
 
 function flipCard(event) {
+    if(isFlipping) return;
+
     if (firstCard === null) {
         firstCard = event.currentTarget;
         showCard(firstCard);
     } else if (secondCard === null && event.currentTarget !== firstCard) {
         secondCard = event.currentTarget;
         showCard(secondCard);
+        
+        isFlipping = true;
 
-        spaceObjects.forEach(spaceObject => {
-            spaceObject.removeEventListener("click", flipCard);
-        });
 
         setTimeout(() => {
-
         if (isMatch(firstCard, secondCard)) {
             pairsFound++;
             score += 100;
@@ -48,16 +49,16 @@ function flipCard(event) {
             secondCard = null;
 
             if (pairsFound === 10) {
-                alert ('YOU WON!! IT LOOKS LIKE YOUR FINAL SCORE IS: ' + score);
+                showMessage('YOU WON!! FINAL SCORE IS: ' + score);
                 resetGame();
             }
         } else {
             badGuesses++;
             score -= 10;
-            alert("DUDE? are you serious... Score: " + score + " You've made " + badGuesses + " so far");
+            showMessage("Score: " + score + " You've made " + badGuesses + " bad guesses so far");
 
-            if (badGuesses === 6) {
-                alert("YOU LOST! FINAL SCORE IS: " + score);
+            if (badGuesses === 20) {
+                showMessage("YOU LOST! FINAL SCORE IS: " + score);
                 resetGame();
             } else {
                     hideCard(firstCard);
@@ -67,12 +68,14 @@ function flipCard(event) {
                 }
             }
 
-            spaceObjects.forEach(spaceObject => {
-                spaceObject.addEventListener("click",flipCard);
-            });
-
+          if (pairsFound + badGuesses === 19) {
+                showMessage("You lost");
+                resetGame();
+        }
+          
             updateStats();
-        }, 500);
+            isFlipping = false;
+        }, 800);
     }
 }
 
@@ -119,5 +122,15 @@ function resetGame() {
         badGuesses = 0;
         score = 0;
         updateStats();
-    }, 1000);
+    }, 5000);
+}
+
+function showMessage(msg) {
+    const messageElement = document.getElementById('message');
+    messageElement.textContent = msg;
+    messageElement.style.display = 'block';
+
+    setTimeout(() => {
+        messageElement.style.display = 'none';
+    }, 3000);
 }

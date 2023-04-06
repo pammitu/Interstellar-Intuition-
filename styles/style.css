@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #3950e8;
 }
 
 .space-objects {
@@ -19,13 +20,13 @@ body {
 }
 
 .space-object {
-    background-color: #444;
+    background-color: #180055;
     padding: 0;
     border: 1px solid #333;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    height: 1vmin;
+    height: 0;
     padding-bottom: 100%;
 }
 .space-object img {
@@ -55,4 +56,22 @@ img.hidden-side {
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.stats-container {
+    display:  grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.space-objects {
+    z-index: 1;
+}
+
+.stats-left,
+.stats-right {
+    padding: 20px;
 }
