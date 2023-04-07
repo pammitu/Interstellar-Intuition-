@@ -14,7 +14,15 @@
 <h1>
     INTERSTELLAR INTUITION
 </h1>
-
+<div class="game-board">
+<div class="stats-left">
+    <div id="score-container">
+        <h3>Score: <span id="score">0</span></h3>
+    </div>
+    <div id="pairs-container">
+        <h3>Total Pairs: <span id="pairs">0</span></h3>
+    </div>
+</div>
 <!--Game Board -->
     <section class="space-objects"> <!--need two of the same for each pair-->
         <div class="space-object">
@@ -96,18 +104,9 @@
         <div class="space-object">
             <img class="hidden-side" src="img/astroid.jpg" alt="astroid"/>
             <img class="open-face" src="img/deep-space.jpg" alt="Deep Space Image"/>
+        </div>
 </section>
 
-<!--Game Stats-->
-<div class="stats-container">
-    <div class="stats-left">
-    <div id="score-container">
-        <h3>Score: <span id="score">0</span></h3>
-    </div>
-    <div id="pairs-container">
-        <h3>Total Pairs: <span id="pairs">0</span></h3>
-    </div>
-</div>
 
 <div class="stats-right"> 
     <div id="fouls-container">
@@ -117,6 +116,7 @@
         <h3>Timer: <span id="timer">00:00</span></h3>
     </div>
 </div>
+
 </div>
 
 <!--game controls-->
