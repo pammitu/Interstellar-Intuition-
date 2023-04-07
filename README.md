@@ -47,6 +47,10 @@ My game is space themed because I was recently inspired by some of the new photo
 
 [**Play Now!**](https://pammitu.github.io/Interstellar-Intuition-/)
 
+## Icebox Items
+
+My focus is to correct the timer function and to make sure it works properly, along with syncing the Stop button.!
+
 ### Acknowledgments and References 
 
 Although this game is still a work in progress the completion of this game to this stage would not be possible without the following resources available to me. 

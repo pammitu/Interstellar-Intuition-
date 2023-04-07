@@ -98,7 +98,7 @@ function flipCard(event) {
             score -= 10;
             showMessage("Score: " + score + " You've made " + badGuesses + " bad guesses so far");
 
-            if (badGuesses === 20) {
+            if (badGuesses === 10) {
                 clearInterval(timerInterval)
                 showMessage("YOU LOST! FINAL SCORE IS: " + score);
                 restartGame();
