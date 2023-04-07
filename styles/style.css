@@ -4,12 +4,16 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
     background-color: #3950e8;
-    color: #00ffff;
+    color: #ffffff;
 }
 
 h1{
     margin-top: 50px;
     margin-bottom: 30px;
+    background-color: #333;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c019c8;
 }
 
 .game-board {
@@ -53,11 +57,12 @@ h1{
     height: 100px;
     width: 100px;
     cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
 }
 
 .hidden-side,
 .open-face {
-    postion: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -76,25 +81,22 @@ img.hidden-side {
 }
 
 #start-button,
-#stop-button {
+#stop-button,
+#restart-button {
     background-color: rgba(128,128,128, 0.5);
     color: #00ffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     padding: 10px 20px;
+    margin-top: 20px;
     font-size: 18px;
     box-shadow: 0 0 10px #00ffff;
     cursor: pointer;
 }
-
-#start-button:hover,
-#stop-button:hover {
-    background-color: rgba(128,128,128, 0.5);
-    padding: 15px;
-    border-radius: 50px;
-    margin-top: 30px
-    display: none;
-}
+ #restart-button {
+    margin-left: 20px;
+    margin-top: 20px;
+ }
 
 #message {
     background-color: rgba(128,128,128, 0.5);
@@ -102,4 +104,5 @@ img.hidden-side {
     border-radius: 50px;
     margin-top: 30px;
     display: none;
+    box-shadow: 0 0 10px #00ffff;
 }
