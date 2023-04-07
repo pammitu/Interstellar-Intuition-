@@ -6,24 +6,21 @@ I decided to base my game off the classic memory card matching game that many of
 
 Before getting into specifics I wanted to take a moment to review how I started to envision my gameplay, below you will see the super basic wireframe of what I wanted my came to look like and then ideally how I wanted to style it.
 
+![Wireframe 1](img/wireframe1.png)
 
-
-
+![Wireframe 2](img/wireframe2.png)
 
 My game is space themed because I was recently inspired by some of the new photos captured by the James Web Telescope, I really wanted to lean into a cooler color pallete for the game. Now, getting into a bit of the game logic. There are a total of 20 masked cards, the player needs to click to reveal two cards at a time to recover the images.
 This project uses Javascript, HTML, and CSS!
 
+![Starting-Sreen](img/starting-screen.png)
 
+1. The player will receive 100 points for each match pair and they can keep track of the amount of pairs they have at the side.
 
-> The player will receive 100 points for each match pair and they can keep track of the amount of pairs they have at the side.
-> For each pair of bag guesses the player will lose 10 points from their total score and get a notification at the bottom, they can also keep track of how many bad guesses they have on the left hand game stats. 
->The player has 2 minutes to find all ten pairs to win the game! If you run out of time or if you make 15 consecutive wrong moves you will also lose the Game.
+![Pair Found](img/pair-found.png)
 
-
-
-
-
-
+2. For each pair of bag guesses the player will lose 10 points from their total score and get a notification at the bottom, they can also keep track of how many bad guesses they have on the left hand game stats. 
+3. The player has 2 minutes to find all ten pairs to win the game! If you run out of time or if you make 15 consecutive wrong moves you will also lose the Game.
 
 Here is my pseudo-code!
 1. Player clicks the start button to initialize the game.
@@ -39,4 +36,4 @@ Here is my pseudo-code!
 11. they have won and their final score
 12. Use variable to keep track of the number of matched cards
 13. If the player has made 6 bad guesses, display a message to the player that they have lost and what their final score is.
-14. Ask the player if they want to play again.
+14. Player can click the play again button.
