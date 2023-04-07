@@ -10,7 +10,7 @@ let badGuesses = 0;
 let score = 0;
 
 startBtn.addEventListener("click",startGame);
-let timerInterval; 
+    let timerInterval; 
 
 function startTimer(){
     let timeRemaining = 120;
@@ -19,7 +19,7 @@ function startTimer(){
         timeRemaining--;
 
     const timerElement = document.getElementById("timer");
-    timerElement.textContent = "Time Remaining: " + timeRemaining + "s";
+        timerElement.textContent = "Time Remaining: " + timeRemaining + "s";
 
 if (timeRemaining <= 0) {
     clearInterval(timerInterval);
@@ -31,7 +31,7 @@ if (timeRemaining <= 0) {
 function timeUp() {
     clearInterval(timerInterval);
     showMessage("You ran out of time! Your final score is: " + score);
-   resetGame();
+    resetGame();
 }
 
 function resetGame(){
