@@ -1,8 +1,29 @@
 # Interstellar-Intuition-
-Project 1 with General Assembly
-For my project this week I decided to create a Concentration/Memory Game. This will be a single player game and it will have a set of 20 masked cards, player will ‘flip’ over two cards at the same time to reveal the image on them. If the cards match, the pair will remain face up and the player earns points if they do not match the player will get a notification saying it’s a wrong guess and the chosen cards will flip back over. The player will receive 100 points for each correct pair and they will lose 10 points for every incorrect guess however, if they have a total of 6 “bad guesses” in a row they automatically lose the game. In order to win the game the player will need to successfully reveal all 20 cards!
 
-This game is space themed, I have been inspireed by the James Web Telescop and it's most recent celestial finds. There are ten pairs of hidden obects, these objects will be things like, an asteroid, a planet, etc.
+Hello and welcome to the details of my first browser game "Interstellar Intuition"!
+
+I decided to base my game off the classic memory card matching game that many of you may have already played before, this is a standard single player game where the objective of the player is to reveal all 10 pairs before the time runs out.
+
+Before getting into specifics I wanted to take a moment to review how I started to envision my gameplay, below you will see the super basic wireframe of what I wanted my came to look like and then ideally how I wanted to style it.
+
+
+
+
+
+My game is space themed because I was recently inspired by some of the new photos captured by the James Web Telescope, I really wanted to lean into a cooler color pallete for the game. Now, getting into a bit of the game logic. There are a total of 20 masked cards, the player needs to click to reveal two cards at a time to recover the images.
+This project uses Javascript, HTML, and CSS!
+
+
+
+> The player will receive 100 points for each match pair and they can keep track of the amount of pairs they have at the side.
+> For each pair of bag guesses the player will lose 10 points from their total score and get a notification at the bottom, they can also keep track of how many bad guesses they have on the left hand game stats. 
+>The player has 2 minutes to find all ten pairs to win the game! If you run out of time or if you make 15 consecutive wrong moves you will also lose the Game.
+
+
+
+
+
+
 
 Here is my pseudo-code!
 1. Player clicks the start button to initialize the game.
